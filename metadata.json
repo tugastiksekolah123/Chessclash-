@@ -1,0 +1,6 @@
+{
+  "name": "chessclash",
+  "description": "Tournament-grade chess platform featuring rich visual worlds (Mount Olympus Greek Gods, Pion en Fleur, Kessler Armory, Primal Beasts), 5 AI levels, procedural Web Audio music, P2P multiplayer, and PWA support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e04a84" />
+      <stop offset="50%" stop-color="#cf3f77" />
+      <stop offset="100%" stop-color="#991f4d" />
+    </linearGradient>
+    <linearGradient id="glowMech512" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#19d3c5" />
+      <stop offset="100%" stop-color="#ffd96b" />
+    </linearGradient>
+    <clipPath id="leftHalf512">
+      <rect x="0" y="0" width="256" height="512" />
+    </clipPath>
+    <clipPath id="rightHalf512">
+      <rect x="256" y="0" width="256" height="512" />
+    </clipPath>
+  </defs>
+  <!-- Rounded Base Icon -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad512)" />
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="4" />
+
+  <!-- Center King Silhouette (Half-Bloom Left, Half-Mech Right) -->
+  <g transform="translate(0, 16)">
+    <!-- Base pedestal -->
+    <path d="M140 380 h232 v32 c0 10 -8 18 -18 18 H158 c-10 0 -18 -8 -18 -18 Z" fill="#fbf8f0" />
+    <path d="M156 360 h200 v20 H156 Z" fill="#fbf8f0" opacity="0.9" />
+
+    <!-- Left side: Botanical Dahlia King (Petals & Vine curves) -->
+    <g clip-path="url(#leftHalf512)">
+      <!-- King body stem & curved petal cloak -->
+      <path d="M256 160 C212 160 164 218 174 298 C179 334 206 360 256 360 Z" fill="#fbf8f0" />
+      <!-- Flower Dahlia Petals -->
+      <path d="M256 122 C198 122 170 180 202 228 C224 196 245 180 256 180 Z" fill="#ffd96b" />
+      <path d="M256 86 C218 86 192 128 224 165 C235 138 251 117 256 117 Z" fill="#fbf8f0" />
+      <circle cx="218" cy="261" r="10" fill="#a93457" />
+      <circle cx="202" cy="309" r="9" fill="#a93457" />
+      <!-- Golden stamen top crown petal -->
+      <path d="M256 58 C235 58 224 79 256 95 Z" fill="#ffd96b" />
+    </g>
+
+    <!-- Right side: Kessler Armory Mechanical King (Plates, Vents, Core) -->
+    <g clip-path="url(#rightHalf512)">
+      <!-- Armor chassis -->
+      <path d="M256 160 L336 197 L325 288 L346 304 L336 360 L256 360 Z" fill="#fbf8f0" />
+      <!-- Reactor vent ribs -->
+      <path d="M256 208 L310 230 L304 246 L256 230 Z" fill="#1b1c4e" opacity="0.8" />
+      <path d="M256 250 L304 266 L298 282 L256 272 Z" fill="#1b1c4e" opacity="0.8" />
+      <path d="M256 293 L314 304 L309 320 L256 312 Z" fill="#1b1c4e" opacity="0.8" />
+      <!-- Crown Mech sensor / blade -->
+      <polygon points="256,54 288,80 277,122 256,117" fill="#ffd96b" />
+      <polygon points="256,122 320,144 304,170 256,160" fill="#fbf8f0" />
+      <!-- Glowing cyan eye/port -->
+      <circle cx="282" cy="197" r="9" fill="#19d3c5" />
+    </g>
+
+    <!-- Center King Crown Cross / Stamen -->
+    <rect x="248" y="42" width="16" height="64" rx="5" fill="#ffd96b" />
+    <rect x="230" y="64" width="52" height="16" rx="5" fill="#ffd96b" />
+    
+    <!-- Dashed golden ID ring around crown -->
+    <ellipse cx="256" cy="101" rx="58" ry="18" fill="none" stroke="#ffd96b" stroke-width="5" stroke-dasharray="10 8" />
+  </g>
+</svg>

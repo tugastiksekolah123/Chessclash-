@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e04a84" />
+      <stop offset="100%" stop-color="#b22c5e" />
+    </linearGradient>
+    <linearGradient id="glowMech" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#19d3c5" />
+      <stop offset="100%" stop-color="#ffd96b" />
+    </linearGradient>
+    <clipPath id="leftHalf">
+      <rect x="0" y="0" width="96" height="192" />
+    </clipPath>
+    <clipPath id="rightHalf">
+      <rect x="96" y="0" width="96" height="192" />
+    </clipPath>
+  </defs>
+  <!-- Rounded Base Icon -->
+  <rect width="192" height="192" rx="42" fill="url(#bgGrad)" />
+  <rect x="4" y="4" width="184" height="184" rx="38" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2" />
+
+  <!-- Center Chess King Silhouette (Half-Bloom Left, Half-Mech Right) -->
+  <g transform="translate(0, 4)">
+    <!-- Base pedestal -->
+    <path d="M52 144 h88 v12 c0 4 -3 8 -8 8 H60 c-5 0 -8 -4 -8 -8 Z" fill="#fbf8f0" />
+    <path d="M58 136 h76 v8 H58 Z" fill="#fbf8f0" opacity="0.9" />
+
+    <!-- Left side: Botanical Dahlia King (Petals & Vine curves) -->
+    <g clip-path="url(#leftHalf)">
+      <!-- King body stem & curved petal cloak -->
+      <path d="M96 60 C80 60 62 82 66 112 C68 126 78 136 96 136 Z" fill="#fbf8f0" />
+      <!-- Flower Dahlia Petals -->
+      <path d="M96 46 C74 46 64 68 76 86 C84 74 92 68 96 68 Z" fill="#ffd96b" />
+      <path d="M96 32 C82 32 72 48 84 62 C88 52 94 44 96 44 Z" fill="#fbf8f0" />
+      <circle cx="82" cy="98" r="4" fill="#a93457" />
+      <circle cx="76" cy="116" r="3.5" fill="#a93457" />
+      <!-- Left golden stamen top crown -->
+      <path d="M96 22 C88 22 84 30 96 36 Z" fill="#ffd96b" />
+    </g>
+
+    <!-- Right side: Kessler Armory Mechanical King (Plates, Vents, Core) -->
+    <g clip-path="url(#rightHalf)">
+      <!-- Armor chassis -->
+      <path d="M96 60 L126 74 L122 108 L130 114 L126 136 L96 136 Z" fill="#fbf8f0" />
+      <!-- Reactor vent ribs -->
+      <path d="M96 78 L116 86 L114 92 L96 86 Z" fill="#1b1c4e" opacity="0.8" />
+      <path d="M96 94 L114 100 L112 106 L96 102 Z" fill="#1b1c4e" opacity="0.8" />
+      <path d="M96 110 L118 114 L116 120 L96 117 Z" fill="#1b1c4e" opacity="0.8" />
+      <!-- Crown Mech sensor / blade -->
+      <polygon points="96,20 108,30 104,46 96,44" fill="#ffd96b" />
+      <polygon points="96,46 120,54 114,64 96,60" fill="#fbf8f0" />
+      <!-- Glowing cyan eye/port -->
+      <circle cx="106" cy="74" r="3.5" fill="#19d3c5" />
+    </g>
+
+    <!-- Center King Crown Cross / Stamen -->
+    <rect x="93" y="16" width="6" height="24" rx="2" fill="#ffd96b" />
+    <rect x="86" y="24" width="20" height="6" rx="2" fill="#ffd96b" />
+    
+    <!-- Dashed golden ID ring around crown -->
+    <ellipse cx="96" cy="38" rx="22" ry="7" fill="none" stroke="#ffd96b" stroke-width="2" stroke-dasharray="4 3" />
+  </g>
+</svg>
